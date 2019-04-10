@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    let word = prompt("nhap ten ngoi sao: ");
+
+    if (search(word)){
+        alert(arr1[i] + " thuoc chom sao " + arr2[i]);
+    }else {
+        alert("khong tim thay");
+    }
+
+    function search() {
+        for (i =0;i<arr1.length;i++){
+            if (word===arr1[i]){
+                return true;
+            }
+        }
+        return false;
+    }
+</script>
+
+</body>
+</html>
